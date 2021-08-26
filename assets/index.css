@@ -1,22 +1,124 @@
-body {
-  background-color: rgb(240, 97, 50);
-  text-align: left; 
-  font-weight: normal;
-  font-size: 100%; 
-  }
-  
-  h1 {
-  color: white;
-  letter-spacing: 5px;  
-  transform: translate(50px, 100px);
-  }
-  
-  h2 {
-  color: white;
-  }
+ 
+ h1{
+   font-family: 'Anonymous Pro', monospace;
+   text-align: center;
+   font-size: 55px;
+   padding-bottom: 20px;
+   padding-top: 50px;
+   color: black;
+}
+
+ .nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: 50px;
+}
    
-  .footer {
-    text-align: right;
-    color:  white;  
-    position: absolute;
-  }  
+ h2 {
+  text-align: center; 
+}  
+
+button {
+  color: black; 
+  font-family: 'Rampart One', monospace; 
+  font-size: 25px;
+  background-color: transparent;
+  border:transparent;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  font-family: 'Anonymous Pro', monospace;
+  color: black;  
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+  height: 35px;
+}  
+
+ button:hover {
+  background-color: chartreuse;
+  border-style: solid; 
+  border-color:chartreuse;
+  border-width: 2px;
+  border-radius: 2px;
+  font-size: 32px; 
+} 
+
+.bar:hover button {
+  background-color: chartreuse;
+  border-style: solid; 
+  border-color: chartreuse;
+  border-width: 2px;
+  border-radius: 2px;
+  font-size: 32px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 13px;
+  font-family: 'Anonymous Pro', monospace;
+  text-align: center;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+a:hover {
+  color:purple;
+  font-size: 18px;
+}
+
+.view-content {
+  opacity: 0;
+  margin-right: 40px;
+  text-align: center;
+} 
+
+.bar:hover .view-content {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.shop-content {
+  opacity: 0;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.bar:hover .shop-content {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#about:hover {
+  color: black;
+  font-size: 32px;
+}
+
+img.aboutimage {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+
+}
+
+.aboutblurb {
+  font-family: 'Anonymous Pro', monospace;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+#address:hover {
+  color: green;
+  font-size: 15px;
+}
