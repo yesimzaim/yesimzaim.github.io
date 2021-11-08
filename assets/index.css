@@ -3,16 +3,21 @@
    font-family: 'Anonymous Pro', monospace;
    text-align: center;
    font-size: 55px;
-   padding-bottom: 20px;
-   padding-top: 50px;
+   padding-bottom: 0px;
+   padding-top: 30px;
    color: black;
 }
 
  .nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   grid-auto-rows: 50px;
+}
+
+.sidenav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
    
  h2 {
@@ -22,7 +27,7 @@
 button {
   color: black; 
   font-family: 'Rampart One', monospace; 
-  font-size: 25px;
+  font-size: 26px;
   background-color: transparent;
   border:transparent;
 }
@@ -35,28 +40,27 @@ a {
 .footer {
   font-family: 'Anonymous Pro', monospace;
   color: black;  
-  position: absolute;
-  bottom: 0px;
-  right: 50px;
-  height: 35px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
 }  
 
  button:hover {
-  background-color: chartreuse;
+  background-color: rgb(78, 248, 115);
   border-style: solid; 
-  border-color:chartreuse;
+  border-color:rgb(84, 248, 78);
   border-width: 2px;
-  border-radius: 2px;
-  font-size: 32px; 
+  border-radius: 3px;
+  font-size: 29px; 
 } 
 
 .bar:hover button {
-  background-color: chartreuse;
+  background-color: rgb(84, 248, 78);
   border-style: solid; 
-  border-color: chartreuse;
+  border-color: rgb(84, 248, 78);
   border-width: 2px;
   border-radius: 2px;
-  font-size: 32px;
+  font-size: 29px;
 }
 
 ul {
@@ -73,7 +77,6 @@ ul li {
 
 a:hover {
   color:purple;
-  font-size: 18px;
 }
 
 .view-content {
@@ -98,27 +101,112 @@ a:hover {
   transition: opacity 0.5s;
 }
 
-#about:hover {
+  #about:hover {
   color: black;
   font-size: 32px;
-}
+} 
 
 img.aboutimage {
   display:block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 13%;
+  margin-top: 10%;
   border-radius: 15px;
 
 }
 
-.aboutblurb {
-  font-family: 'Anonymous Pro', monospace;
-  text-align: center;
-  padding-top: 20px;
+
+/*.textcentre {
+  font-family: 'Anonymous Pro', monospace; 
   font-size: 15px;
-}
+  line-height: 20px;
+}*/
 
 #address:hover {
-  color: green;
+  color: rgb(104, 2, 104);
   font-size: 15px;
+}
+ 
+/*.about-title {
+  color: black; 
+  font-family: 'Rampart One', monospace; 
+  font-size: 25px; 
+  border:transparent;
+  background-color: chartreuse;
+  border-style: solid; 
+  border-color:chartreuse;
+  border-width: 2px;
+  border-radius: 2px;
+  font-size: 32px; 
+} */
+
+/*.about-content {
+  opacity: 0;
+  margin-right: 20px;
+  text-align: center;
+}*/
+
+.bar:hover .about-content {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+ 
+.sidetitle {
+  font-family: 'Anonymous Pro', monospace; 
+  font-size: 35px;
+}  
+
+.centre {
+  width: 60%;
+}
+
+p {
+  font-family: 'Anonymous Pro', monospace; 
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h3 {
+  font-family: 'Anonymous Pro', monospace; 
+  font-size: 20px;
+  line-height: 20px;
+  font-weight:900;
+}
+
+.contact {
+  padding-top: 5%;
+  margin-bottom: 15%;
+}
+
+.certificates {
+  padding-top: 5%;
+  font-family: 'Anonymous Pro', monospace; 
+}
+
+.contact a {
+  font-family: 'Anonymous Pro', monospace; 
+}
+
+.github {
+  padding-top: 5%;
+  
+}
+
+.github a {
+  font-family: 'Anonymous Pro', monospace; 
+}
+
+.divide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cv {
+  padding-top: 5%;
+}
+
+.projecttext {
+ width: 40%;
+ padding-left: 40%;
+ padding-top: 5%;
 }
